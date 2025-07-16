@@ -1,3 +1,10 @@
+if(!window.location.search.includes('id='))
+{
+  const url=new URL(Window.location.href);
+  url.searchParams.set('id', '1001');
+  window.location.href=url.toString();
+}
+
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
